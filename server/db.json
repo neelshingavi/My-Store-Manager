@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Alice Wonderland",
+    "contact": "1122334455",
+    "address": "123 Rabbit Hole",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "2000",
+    "completed": true,
+    "_id": "1767518853837",
+    "createdAt": "2026-01-04T09:27:33.837Z"
+  },
+  {
+    "name": "Alice Wonderland",
+    "contact": "1122334455",
+    "address": "123 Rabbit Hole",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "2000",
+    "completed": true,
+    "_id": "1767519033407",
+    "createdAt": "2026-01-04T09:30:33.407Z"
+  },
+  {
+    "name": "Alice Wonderland",
+    "contact": "1122334455",
+    "address": "123 Rabbit Hole",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "2000",
+    "completed": true,
+    "_id": "1767519237935",
+    "createdAt": "2026-01-04T09:33:57.935Z"
+  },
+  {
+    "name": "Neel",
+    "contact": "9284466546",
+    "address": "456 Avenue",
+    "reminderDate": "2026-01-04T18:30:00.000Z",
+    "billAmount": "1233",
+    "completed": true,
+    "_id": "1767519321473",
+    "createdAt": "2026-01-04T09:35:21.473Z"
+  },
+  {
+    "name": "Jane Smith",
+    "contact": "9988776655",
+    "address": "456 Avenue",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "1200",
+    "completed": true,
+    "_id": "1767519333424",
+    "createdAt": "2026-01-04T09:35:33.424Z"
+  },
+  {
+    "name": "Alice Wonderland",
+    "contact": "9881181739",
+    "address": "456 Avenue",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "1200",
+    "completed": true,
+    "_id": "1767519376627",
+    "createdAt": "2026-01-04T09:36:16.627Z"
+  },
+  {
+    "name": "Jane Smith",
+    "contact": "9881181739",
+    "address": "456 Avenue",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "1222",
+    "completed": true,
+    "_id": "1767519397975",
+    "createdAt": "2026-01-04T09:36:37.975Z"
+  },
+  {
+    "name": "John",
+    "contact": "9876543211",
+    "address": "",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "100",
+    "completed": true,
+    "_id": "1767519652546",
+    "createdAt": "2026-01-04T09:40:52.546Z"
+  },
+  {
+    "name": "Sarah",
+    "contact": "9876543212",
+    "address": "",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "200",
+    "completed": true,
+    "_id": "1767519707976",
+    "createdAt": "2026-01-04T09:41:47.976Z"
+  },
+  {
+    "name": "Ashok Shingavi",
+    "contact": "9890751680",
+    "address": "456 Avenue",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "1200",
+    "completed": true,
+    "_id": "1767519820653",
+    "createdAt": "2026-01-04T09:43:40.653Z"
+  },
+  {
+    "name": "Future Frank",
+    "contact": "5550001111",
+    "address": "",
+    "reminderDate": "2026-01-13T18:30:00.000Z",
+    "billAmount": "100",
+    "completed": true,
+    "_id": "1767520280563",
+    "createdAt": "2026-01-04T09:51:20.563Z"
+  },
+  {
+    "name": "Past Paul",
+    "contact": "5550002222",
+    "address": "",
+    "reminderDate": "2026-01-04T18:30:00.000Z",
+    "billAmount": "200",
+    "completed": true,
+    "_id": "1767520526467",
+    "createdAt": "2026-01-04T09:55:26.467Z"
+  },
+  {
+    "name": "Neel oo",
+    "contact": "9881181739",
+    "address": "456 Avenue",
+    "reminderDate": "2026-01-08T18:30:00.000Z",
+    "billAmount": "100000",
+    "completed": true,
+    "_id": "1767520601791",
+    "createdAt": "2026-01-04T09:56:41.791Z"
+  },
+  {
+    "name": "Jane Smith",
+    "contact": "9988776655",
+    "address": "456 Avenue",
+    "reminderDate": "2035-11-12T18:30:00.000Z",
+    "billAmount": "1200",
+    "completed": true,
+    "_id": "1767520652259",
+    "createdAt": "2026-01-04T09:57:32.259Z"
+  },
+  {
+    "name": "Ashok Shingavi",
+    "contact": "9890751680",
+    "address": "Kondhwa",
+    "reminderDate": "2026-02-02T18:30:00.000Z",
+    "billAmount": "1000",
+    "completed": true,
+    "_id": "1767520771021",
+    "createdAt": "2026-01-04T09:59:31.021Z"
+  },
+  {
+    "name": "Ashok",
+    "contact": "9890751680",
+    "address": "456 Avenue",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "1200",
+    "completed": true,
+    "_id": "1767520794998",
+    "createdAt": "2026-01-04T09:59:54.998Z"
+  },
+  {
+    "name": "Ashok Shingavi",
+    "contact": "9890751680",
+    "address": "Kondhwa",
+    "reminderDate": "2026-01-03T18:30:00.000Z",
+    "billAmount": "1000",
+    "completed": true,
+    "_id": "1767520973069",
+    "createdAt": "2026-01-04T10:02:53.069Z"
+  },
+  {
+    "name": "supriya",
+    "contact": "9881181739",
+    "address": "456 Avenue",
+    "reminderDate": "2026-01-13T18:30:00.000Z",
+    "billAmount": "5000",
+    "completed": true,
+    "_id": "1767520999706",
+    "createdAt": "2026-01-04T10:03:19.706Z"
+  },
+  {
+    "name": "supriya",
+    "contact": "9881181739",
+    "address": "Kondhwa",
+    "reminderDate": "2026-02-02T18:30:00.000Z",
+    "billAmount": "1000",
+    "completed": true,
+    "_id": "1767521290935",
+    "createdAt": "2026-01-04T10:08:10.935Z"
+  },
+  {
+    "name": "Ashok S",
+    "contact": "9890751680",
+    "address": "",
+    "reminderDate": "2026-02-03T18:30:00.000Z",
+    "billAmount": "5000",
+    "completed": true,
+    "_id": "1767594402198",
+    "createdAt": "2026-01-05T06:26:42.198Z"
+  },
+  {
+    "name": "Neel Shingavi",
+    "contact": "9890751680",
+    "address": "Kondhwa, Pune-48",
+    "reminderDate": "2026-01-04T18:30:00.000Z",
+    "billAmount": "100",
+    "completed": false,
+    "_id": "1767594889637",
+    "createdAt": "2026-01-05T06:34:49.637Z"
+  }
+]
