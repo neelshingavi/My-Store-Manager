@@ -6,26 +6,6 @@
     "reminderDate": "2026-01-03T18:30:00.000Z",
     "billAmount": "2000",
     "completed": true,
-    "_id": "1767518853837",
-    "createdAt": "2026-01-04T09:27:33.837Z"
-  },
-  {
-    "name": "Alice Wonderland",
-    "contact": "1122334455",
-    "address": "123 Rabbit Hole",
-    "reminderDate": "2026-01-03T18:30:00.000Z",
-    "billAmount": "2000",
-    "completed": true,
-    "_id": "1767519033407",
-    "createdAt": "2026-01-04T09:30:33.407Z"
-  },
-  {
-    "name": "Alice Wonderland",
-    "contact": "1122334455",
-    "address": "123 Rabbit Hole",
-    "reminderDate": "2026-01-03T18:30:00.000Z",
-    "billAmount": "2000",
-    "completed": true,
     "_id": "1767519237935",
     "createdAt": "2026-01-04T09:33:57.935Z"
   },
@@ -38,36 +18,6 @@
     "completed": true,
     "_id": "1767519321473",
     "createdAt": "2026-01-04T09:35:21.473Z"
-  },
-  {
-    "name": "Jane Smith",
-    "contact": "9988776655",
-    "address": "456 Avenue",
-    "reminderDate": "2026-01-03T18:30:00.000Z",
-    "billAmount": "1200",
-    "completed": true,
-    "_id": "1767519333424",
-    "createdAt": "2026-01-04T09:35:33.424Z"
-  },
-  {
-    "name": "Alice Wonderland",
-    "contact": "9881181739",
-    "address": "456 Avenue",
-    "reminderDate": "2026-01-03T18:30:00.000Z",
-    "billAmount": "1200",
-    "completed": true,
-    "_id": "1767519376627",
-    "createdAt": "2026-01-04T09:36:16.627Z"
-  },
-  {
-    "name": "Jane Smith",
-    "contact": "9881181739",
-    "address": "456 Avenue",
-    "reminderDate": "2026-01-03T18:30:00.000Z",
-    "billAmount": "1222",
-    "completed": true,
-    "_id": "1767519397975",
-    "createdAt": "2026-01-04T09:36:37.975Z"
   },
   {
     "name": "John",
@@ -90,16 +40,6 @@
     "createdAt": "2026-01-04T09:41:47.976Z"
   },
   {
-    "name": "Ashok Shingavi",
-    "contact": "9890751680",
-    "address": "456 Avenue",
-    "reminderDate": "2026-01-03T18:30:00.000Z",
-    "billAmount": "1200",
-    "completed": true,
-    "_id": "1767519820653",
-    "createdAt": "2026-01-04T09:43:40.653Z"
-  },
-  {
     "name": "Future Frank",
     "contact": "5550001111",
     "address": "",
@@ -120,16 +60,6 @@
     "createdAt": "2026-01-04T09:55:26.467Z"
   },
   {
-    "name": "Neel oo",
-    "contact": "9881181739",
-    "address": "456 Avenue",
-    "reminderDate": "2026-01-08T18:30:00.000Z",
-    "billAmount": "100000",
-    "completed": true,
-    "_id": "1767520601791",
-    "createdAt": "2026-01-04T09:56:41.791Z"
-  },
-  {
     "name": "Jane Smith",
     "contact": "9988776655",
     "address": "456 Avenue",
@@ -138,46 +68,6 @@
     "completed": true,
     "_id": "1767520652259",
     "createdAt": "2026-01-04T09:57:32.259Z"
-  },
-  {
-    "name": "Ashok Shingavi",
-    "contact": "9890751680",
-    "address": "Kondhwa",
-    "reminderDate": "2026-02-02T18:30:00.000Z",
-    "billAmount": "1000",
-    "completed": true,
-    "_id": "1767520771021",
-    "createdAt": "2026-01-04T09:59:31.021Z"
-  },
-  {
-    "name": "Ashok",
-    "contact": "9890751680",
-    "address": "456 Avenue",
-    "reminderDate": "2026-01-03T18:30:00.000Z",
-    "billAmount": "1200",
-    "completed": true,
-    "_id": "1767520794998",
-    "createdAt": "2026-01-04T09:59:54.998Z"
-  },
-  {
-    "name": "Ashok Shingavi",
-    "contact": "9890751680",
-    "address": "Kondhwa",
-    "reminderDate": "2026-01-03T18:30:00.000Z",
-    "billAmount": "1000",
-    "completed": true,
-    "_id": "1767520973069",
-    "createdAt": "2026-01-04T10:02:53.069Z"
-  },
-  {
-    "name": "supriya",
-    "contact": "9881181739",
-    "address": "456 Avenue",
-    "reminderDate": "2026-01-13T18:30:00.000Z",
-    "billAmount": "5000",
-    "completed": true,
-    "_id": "1767520999706",
-    "createdAt": "2026-01-04T10:03:19.706Z"
   },
   {
     "name": "supriya",
@@ -190,23 +80,117 @@
     "createdAt": "2026-01-04T10:08:10.935Z"
   },
   {
-    "name": "Ashok S",
-    "contact": "9890751680",
+    "name": "shingavineel@gmail.com",
+    "contact": "9890",
     "address": "",
-    "reminderDate": "2026-02-03T18:30:00.000Z",
-    "billAmount": "5000",
+    "reminderDate": "2026-01-05T18:30:00.000Z",
+    "billAmount": "123",
     "completed": true,
-    "_id": "1767594402198",
-    "createdAt": "2026-01-05T06:26:42.198Z"
+    "_id": "1767631422251",
+    "createdAt": "2026-01-05T16:43:42.251Z"
   },
   {
-    "name": "Neel Shingavi",
-    "contact": "9890751680",
-    "address": "Kondhwa, Pune-48",
-    "reminderDate": "2026-01-04T18:30:00.000Z",
-    "billAmount": "100",
+    "name": "HomeTest",
+    "contact": "9876543210",
+    "address": "x",
+    "reminderDate": "2026-01-05T18:30:00.000Z",
+    "billAmount": 30,
     "completed": false,
-    "_id": "1767594889637",
-    "createdAt": "2026-01-05T06:34:49.637Z"
+    "_id": "1767631916886",
+    "createdAt": "2026-01-05T16:51:56.886Z"
+  },
+  {
+    "name": "VisitedTest",
+    "contact": "9123456700",
+    "address": "addr",
+    "delivery": "On counter",
+    "reminderDate": "2026-01-05T18:30:00.000Z",
+    "billAmount": 10,
+    "completed": false,
+    "_id": "1767632920337",
+    "createdAt": "2026-01-05T17:08:40.337Z"
+  },
+  {
+    "name": "VisitedTest2",
+    "contact": "9123456701",
+    "address": "addr",
+    "delivery": "On counter",
+    "reminderDate": "2026-01-05T18:30:00.000Z",
+    "billAmount": 10,
+    "completed": false,
+    "_id": "1767632980988",
+    "createdAt": "2026-01-05T17:09:40.988Z"
+  },
+  {
+    "name": "OnceB",
+    "contact": "7770004444",
+    "address": "addr",
+    "delivery": "On counter",
+    "reminderDate": "2026-01-06T18:30:00.000Z",
+    "visitedDate": "2026-01-06",
+    "billAmount": 200,
+    "completed": false,
+    "_id": "1767638903670",
+    "createdAt": "2026-01-05T18:48:23.670Z"
+  },
+  {
+    "name": "TestC",
+    "contact": "5550003333",
+    "address": "addr",
+    "delivery": "On counter",
+    "reminderDate": "2026-01-06T18:30:00.000Z",
+    "visitedDate": "2026-01-06",
+    "billAmount": 300,
+    "completed": false,
+    "_id": "1767638914807",
+    "createdAt": "2026-01-05T18:48:34.807Z"
+  },
+  {
+    "name": "FinalTest2",
+    "contact": "7770001111",
+    "address": "addr",
+    "delivery": "On counter",
+    "reminderDate": "2026-01-06T18:30:00.000Z",
+    "visitedDate": "2026-01-06",
+    "billAmount": 200,
+    "completed": false,
+    "_id": "1767639010478",
+    "createdAt": "2026-01-05T18:50:10.478Z"
+  },
+  {
+    "name": "Xamp",
+    "contact": "9890751680",
+    "address": "",
+    "delivery": "On counter",
+    "reminderDate": "2026-01-10T18:30:00.000Z",
+    "visitedDate": "2026-01-06",
+    "billAmount": "1",
+    "completed": true,
+    "_id": "1767639122701",
+    "createdAt": "2026-01-05T18:52:02.701Z"
+  },
+  {
+    "name": "CLI Test",
+    "contact": "1234567890",
+    "address": "x",
+    "delivery": "On counter",
+    "reminderDate": "2026-01-06T18:30:00.000Z",
+    "visitedDate": "2026-01-06",
+    "billAmount": "50",
+    "completed": true,
+    "_id": "1767683230753",
+    "createdAt": "2026-01-06T07:07:10.753Z"
+  },
+  {
+    "name": "Prasad",
+    "contact": "9272197260",
+    "address": "Kondhwa, Pune-48",
+    "delivery": "On counter",
+    "reminderDate": "2026-01-20T18:30:00.000Z",
+    "visitedDate": "2026-01-06",
+    "billAmount": "1000",
+    "completed": true,
+    "_id": "1767683242234",
+    "createdAt": "2026-01-06T07:07:22.234Z"
   }
 ]

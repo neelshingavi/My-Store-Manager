@@ -8,19 +8,34 @@ const AddCustomer = ({ onCustomerAdded }) => {
         contact: '',
         address: '',
         daysUntilReminder: '',
-        billAmount: ''
+        billAmount: '',
+        delivery: 'On counter'
     });
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState({ type: '', text: '' });
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        // For contact field, allow only digits and cap at 10 characters
+        if (e.target.name === 'contact') {
+            const digitsOnly = e.target.value.replace(/\D/g, '').slice(0, 10);
+            setFormData({ ...formData, contact: digitsOnly });
+        } else {
+            setFormData({ ...formData, [e.target.name]: e.target.value });
+        }
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
         setMessage({ type: '', text: '' });
+
+        // Client-side validation for contact: must be exactly 10 digits
+        const contactPattern = /^\d{10}$/;
+        if (!contactPattern.test(formData.contact)) {
+            setMessage({ type: 'danger', text: 'Contact must be 10 digits (numbers only).' });
+            setLoading(false);
+            return;
+        }
 
         try {
             await axios.post('http://localhost:5001/api/customers', formData);
@@ -30,7 +45,8 @@ const AddCustomer = ({ onCustomerAdded }) => {
                 contact: '',
                 address: '',
                 daysUntilReminder: '',
-                billAmount: ''
+                billAmount: '',
+                delivery: 'On counter'
             });
             if (onCustomerAdded) onCustomerAdded();
         } catch (error) {
@@ -66,7 +82,24 @@ const AddCustomer = ({ onCustomerAdded }) => {
                         onChange={handleChange}
                         required
                         placeholder="e.g. 9876543210"
+                        inputMode="numeric"
+                        pattern="\d{10}"
+                        maxLength={10}
+                        aria-label="Contact number, 10 digits"
                     />
+                </div>
+                <div className="form-group">
+                    <label className="form-label">Delivery</label>
+                    <select
+                        className="form-control"
+                        name="delivery"
+                        value={formData.delivery}
+                        onChange={handleChange}
+                        aria-label="Delivery option"
+                    >
+                        <option value="On counter">On counter</option>
+                        <option value="Home Delivery">Home Delivery</option>
+                    </select>
                 </div>
                 <div className="form-group">
                     <label className="form-label"><UserPlus size={16} /> Customer Name</label>

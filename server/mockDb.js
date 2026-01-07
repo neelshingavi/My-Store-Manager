@@ -18,6 +18,17 @@ class MockDB {
         const data = await this.findAll();
         item._id = Date.now().toString();
         item.createdAt = new Date();
+        // ensure contact is stored as string
+        if (item.contact !== undefined && item.contact !== null) {
+            item.contact = String(item.contact);
+        }
+        // visitedDate stored as YYYY-MM-DD in India timezone
+        const india = new Date(item.createdAt.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+        const yyyy = india.getFullYear();
+        const mm = String(india.getMonth() + 1).padStart(2, '0');
+        const dd = String(india.getDate()).padStart(2, '0');
+        item.visitedDate = `${yyyy}-${mm}-${dd}`;
+        console.log('MockDB saving item:', item);
         data.push(item);
         fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2));
         return item;
@@ -32,6 +43,63 @@ class MockDB {
             return data[index];
         }
         return null;
+    }
+
+    static async findByIdAndDelete(id) {
+        const data = await this.findAll();
+        const index = data.findIndex(item => item._id === id);
+        if (index !== -1) {
+            const removed = data.splice(index, 1)[0];
+            fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2));
+            return removed;
+        }
+        return null;
+    }
+
+    static async deleteByContact(contact) {
+        console.log('MockDB.deleteByContact called with:', contact, 'type:', typeof contact);
+        const data = await this.findAll();
+        const initialLen = data.length;
+        const filtered = data.filter(item => String(item.contact) !== String(contact));
+        const removedCount = initialLen - filtered.length;
+        if (removedCount > 0) {
+            fs.writeFileSync(DB_PATH, JSON.stringify(filtered, null, 2));
+        }
+        console.log('MockDB.deleteByContact removedCount:', removedCount);
+        return removedCount;
+    }
+
+    static async deduplicate() {
+        const data = await this.findAll();
+        const byContact = {};
+        for (const item of data) {
+            if (!item.contact) continue;
+            if (!byContact[item.contact]) byContact[item.contact] = [];
+            byContact[item.contact].push(item);
+        }
+
+        let removedCount = 0;
+        const keepIds = new Set();
+        for (const contact of Object.keys(byContact)) {
+            const entries = byContact[contact];
+            if (entries.length > 1) {
+                // keep the latest by createdAt
+                entries.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+                keepIds.add(entries[0]._id);
+                for (let i = 1; i < entries.length; i++) {
+                    removedCount++;
+                }
+            } else {
+                keepIds.add(entries[0]._id);
+            }
+        }
+
+        const deduped = data.filter(item => keepIds.has(item._id));
+        if (removedCount > 0) {
+            fs.writeFileSync(DB_PATH, JSON.stringify(deduped, null, 2));
+        }
+        console.log('MockDB.deduplicate removedCount:', removedCount);
+        return removedCount;
     }
 
     static async find(query) {

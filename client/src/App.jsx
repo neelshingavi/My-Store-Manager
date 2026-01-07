@@ -3,10 +3,12 @@ import axios from 'axios';
 import { PlusCircle, List, Activity } from 'lucide-react';
 import AddCustomer from './components/AddCustomer';
 import RemindersTable from './components/RemindersTable';
+import AllData from './components/AllData';
 
 function App() {
   const [activeTab, setActiveTab] = useState('reminders');
   const [reminders, setReminders] = useState([]);
+  const [allData, setAllData] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const fetchReminders = async () => {
@@ -21,8 +23,18 @@ function App() {
     }
   };
 
+  const fetchAll = async () => {
+    try {
+      const res = await axios.get('http://localhost:5001/api/customers');
+      setAllData(res.data || []);
+    } catch (err) {
+      console.error('Error fetching all customers', err);
+    }
+  };
+
   useEffect(() => {
     fetchReminders();
+    fetchAll();
   }, []);
 
   return (
@@ -43,23 +55,34 @@ function App() {
             onClick={() => setActiveTab('add')}
           >
             Add Customer
-          </a>
-        </div>
+          </a>          <a
+            className={`nav-item ${activeTab === 'alldata' ? 'active' : ''}`}
+            onClick={() => setActiveTab('alldata')}
+          >
+            All Records
+          </a>        </div>
       </nav>
 
       <main className="container">
         {activeTab === 'reminders' ? (
           <RemindersTable
             reminders={reminders}
-            onReminderCompleted={fetchReminders}
+            onReminderCompleted={() => { fetchReminders(); fetchAll(); }}
             loading={loading}
           />
-        ) : (
+        ) : activeTab === 'add' ? (
           <AddCustomer
             onCustomerAdded={() => {
               fetchReminders();
+              fetchAll();
               setActiveTab('reminders');
             }}
+          />
+        ) : (
+          <AllData
+            data={allData}
+            refreshAll={fetchAll}
+            onChange={() => { fetchReminders(); fetchAll(); }}
           />
         )}
       </main>
