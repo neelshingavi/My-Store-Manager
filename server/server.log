@@ -2,7 +2,7 @@
 > server@1.0.0 start
 > node index.js
 
-[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
 Server is running on port 5001
 Could not connect to MongoDB MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
     at _handleConnectionErrors (/Users/macbook/Documents/Medical Software/server/node_modules/mongoose/lib/connection.js:1169:11)
@@ -37,70 +37,37 @@ Could not connect to MongoDB MongooseServerSelectionError: connect ECONNREFUSED 
   }
 }
 Received payload: {
-  name: 'CLI Test',
-  contact: '1234567890',
-  address: 'x',
-  daysUntilReminder: 1,
-  billAmount: '50',
-  delivery: 'On counter'
-}
-Calculated reminderDate: 2026-01-06T18:30:00.000Z
-customerData: {
-  name: 'CLI Test',
-  contact: '1234567890',
-  address: 'x',
-  delivery: 'On counter',
-  reminderDate: 2026-01-06T18:30:00.000Z,
-  visitedDate: '2026-01-06',
-  billAmount: '50',
-  completed: false
-}
-MockDB.deleteByContact called with: 1234567890 type: string
-MockDB.deleteByContact removedCount: 0
-MongoDB not connected, using MockDB
-MockDB saving item: {
-  name: 'CLI Test',
-  contact: '1234567890',
-  address: 'x',
-  delivery: 'On counter',
-  reminderDate: 2026-01-06T18:30:00.000Z,
-  visitedDate: '2026-01-06',
-  billAmount: '50',
-  completed: false,
-  _id: '1767683230753',
-  createdAt: 2026-01-06T07:07:10.753Z
-}
-Received payload: {
-  name: 'Prasad',
-  contact: '9272197260',
-  address: 'Kondhwa, Pune-48',
+  name: 'Regression Test User',
+  contact: '9999999999',
+  address: 'Test Address',
   daysUntilReminder: '15',
-  billAmount: '1000',
-  delivery: 'On counter'
+  billAmount: '1500',
+  delivery: 'Home Delivery'
 }
-Calculated reminderDate: 2026-01-20T18:30:00.000Z
+Calculated reminderDate: 2026-01-22T18:30:00.000Z
 customerData: {
-  name: 'Prasad',
-  contact: '9272197260',
-  address: 'Kondhwa, Pune-48',
-  delivery: 'On counter',
-  reminderDate: 2026-01-20T18:30:00.000Z,
-  visitedDate: '2026-01-06',
-  billAmount: '1000',
+  name: 'Regression Test User',
+  contact: '9999999999',
+  address: 'Test Address',
+  delivery: 'Home Delivery',
+  reminderDate: 2026-01-22T18:30:00.000Z,
+  visitedDate: '2026-01-08',
+  billAmount: '1500',
   completed: false
 }
-MockDB.deleteByContact called with: 9272197260 type: string
+MockDB.deleteByContact called with: 9999999999 type: string
 MockDB.deleteByContact removedCount: 0
 MongoDB not connected, using MockDB
 MockDB saving item: {
-  name: 'Prasad',
-  contact: '9272197260',
-  address: 'Kondhwa, Pune-48',
-  delivery: 'On counter',
-  reminderDate: 2026-01-20T18:30:00.000Z,
-  visitedDate: '2026-01-06',
-  billAmount: '1000',
+  name: 'Regression Test User',
+  contact: '9999999999',
+  address: 'Test Address',
+  delivery: 'Home Delivery',
+  reminderDate: 2026-01-22T18:30:00.000Z,
+  visitedDate: '2026-01-08',
+  billAmount: '1500',
   completed: false,
-  _id: '1767683242234',
-  createdAt: 2026-01-06T07:07:22.234Z
+  _id: '1767810839583',
+  createdAt: 2026-01-07T18:33:59.583Z
 }
+MockDB.deduplicate removedCount: 0
