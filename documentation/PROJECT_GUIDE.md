@@ -91,7 +91,7 @@ The application follows a **client-server architecture**:
 - **Bulk Messages**: Opens multiple WhatsApp windows with delay to prevent browser blocking
 - **Broadcast List**: Generates .vcf file with all contacts that can be imported into WhatsApp
 
----
+-------
 
 ## Technology Stack
 
